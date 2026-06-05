@@ -1,6 +1,6 @@
 ## Comandi utili per LINUX
 
-1. Creazione dello Script Bash per sincronizzare cartelle con il server
+1. Creazione dello Script Bash per sincronizzare cartelle con il server grazie a *rsync*
 
 Apri il terminale e digita:
 

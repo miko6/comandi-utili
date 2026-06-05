@@ -16,7 +16,7 @@ echo "=== Inizio Sincronizzazione Immagini ==="
 rsync -av --progress \
   --exclude="Inutili/" \
   --exclude="Personale/" \
-  /home/domenico/Immagini/ 192.168.1.192:/mnt/nasm2/wall/
+  /home/domenico/Immagini/ 192.168.1.xxx:/mnt/nasm2/wall/
 
 echo "=== Inizio Sincronizzazione Scaricati ==="
 # Escludiamo una cartella chiamata "Cache" e tutti i file .iso non finiti (es. di Torrent)
@@ -26,7 +26,7 @@ rsync -av --progress \
   /home/domenico/Scaricati/ 192.168.1.192:/mnt/nasm2/condivisione/
 
 echo "=== Backup dello Script sul Server ==="
-rsync -av --progress "$0" 192.168.1.192:/mnt/nasm2/
+rsync -av --progress "$0" 192.168.1.xxx:/mnt/nasm2/
 
 echo "=== Sincronizzazione Completata! ==="
 

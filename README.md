@@ -193,3 +193,21 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
 - *Consentire un indirizzo IP su una porta specifica*
 
 `sudo ufw allow from 192.168.1.100 to any port 22`  
+
+---
+ 
+ 4. Creazione della SSH-KEY in Windows 10 e invio al server
+ 
+ - Aprire la PowerShell e digitare:
+ 
+ `ssh-keygen`
+ 
+ - Rispondere con INVIO alle richieste e annotare il percorso dove è stata salvata la key.
+ 
+ es.
+ ```
+ C:\Users\domenico/.ssh/id_ed25519.pub
+ ```
+ - Sempre da PowerShell digitare il seguente comando per inviare la chiave al server (se non lo si era aftto prima è necessario loggarsi almeno una volta al server con la PowerShell prima di mandare la chiave che altrimenti non verrà accettata)
+ 
+ `cat C:\Users\domenico/.ssh/id_ed25519.pub | ssh domenico@192.168.1.xxx "cat >> ~/.ssh/authorized_keys"`  

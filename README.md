@@ -206,8 +206,8 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
  
  es.
  ```
- C:\Users\domenico/.ssh/id_ed25519.pub
+ C:\Users\nomeutente/.ssh/id_ed25519.pub
  ```
  - Sempre da PowerShell digitare il seguente comando per inviare la chiave al server (se non lo si era aftto prima è necessario loggarsi almeno una volta al server con la PowerShell prima di mandare la chiave che altrimenti non verrà accettata)
  
- `cat C:\Users\domenico/.ssh/id_ed25519.pub | ssh domenico@192.168.1.xxx "cat >> ~/.ssh/authorized_keys"`  
+ `cat C:\Users\nomeutente/.ssh/id_ed25519.pub | ssh nomeutente_server@192.168.1.xxx "cat >> ~/.ssh/authorized_keys"`  

@@ -216,35 +216,35 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
  
  Libreria arch
  
-`sudo pacman -Syu` per aggiornare il sistema
+`sudo pacman -Syu` per aggiornare il sistema  
 `sudo pacman -Syu nomepacchetto` per installare il programma voluto  
-`sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`
-`sudo pacman -Rs nome_pacchetto` per disinstallare in modod sicuro e pulito un nome_pacchetto
-`pacman -Qdt` Elenca tutti i pacchetti orfani
+`sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`  
+`sudo pacman -Rs nome_pacchetto` per disinstallare in modod sicuro e pulito un nome_pacchetto  
+`pacman -Qdt` Elenca tutti i pacchetti orfani  
 `sudo pacman -Rns $(pacman -Qdtq)` Rimuovi tutti i pacchetti orfani in un colpo solo  
 - You can press CTRL+ALT+F2/3/4 to switch to a different TTY (teletype) which will allow you to install Konsole. Then do CTRL+ALT+F1 to switch back to TTY1 where Plasma is running and you should be able to use Konsole to do whatever else you need to.  
-`sudo pacman -Syu && flatpak update` aggiornamento di sistema e dei pacchetti installati tramite flatpack
+`sudo pacman -Syu && flatpak update` aggiornamento di sistema e dei pacchetti installati tramite flatpack  
 
 ---
 
 Libreria Debian
 
-Per spegnere la macchina usare `poweroff` oppure `shutdown -h now`. Il sistema init systemd fornisce anche altri comandi per la effettuare la stessa operazione; per esempio `systemctl reboot` oppure `systemctl poweroff`. 
-`sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`
-`sudo ntfsfix /dev/sda1` tipo il chkdsk di windows
-`sudo mount -t ntfs /dev/sda1 /mnt/seagate` per montare il disco
- `sudo rm -rf /xxxxx` rimuovere directory non vuota
- `mv vecchionome.txt nuovonome.txt` per rinominare un file
- `sudo apt autoremove` rimuove i pacchetti installati automaticamente (come librerie o dipendenze) che non sono più necessari ad alcun programma sul sistema
+Per spegnere la macchina usare `poweroff` oppure `shutdown -h now`. Il sistema init systemd fornisce anche altri comandi per la effettuare la stessa operazione; per esempio `systemctl reboot` oppure `systemctl poweroff`.   
+`sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`  
+`sudo ntfsfix /dev/sda1` tipo il chkdsk di windows  
+`sudo mount -t ntfs /dev/sda1 /mnt/seagate` per montare il disco  
+ `sudo rm -rf /xxxxx` rimuovere directory non vuota  
+ `mv vecchionome.txt nuovonome.txt` per rinominare un file  
+ `sudo apt autoremove` rimuove i pacchetti installati automaticamente (come librerie o dipendenze) che non sono più necessari ad alcun programma sul sistema  
  
 ---
 
 Libreria Docker  
 
-ricreare il database gravity
+ricreare il database gravity  
 
-`sudo docker exec -it pihole pihole -g -r recreate`
-`sudo docker exec -it pihole pihole -g -r recover`
-`sudo docker exec -it pihole pihole -g -r recover force`
-`sudo docker exec -it pihole pihole -d`                  (log per eventuali errori)
+`sudo docker exec -it pihole pihole -g -r recreate`  
+`sudo docker exec -it pihole pihole -g -r recover` 
+`sudo docker exec -it pihole pihole -g -r recover force`  
+`sudo docker exec -it pihole pihole -d`                  (log per eventuali errori)  
 `sudo docker exec -it pihole pihole -g`                  (update manuale delle liste)  

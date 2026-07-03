@@ -249,3 +249,13 @@ ricreare il database gravity
 `sudo docker exec -it pihole pihole -g -r recover force`  
 `sudo docker exec -it pihole pihole -d`                  (log per eventuali errori)  
 `sudo docker exec -it pihole pihole -g`                  (update manuale delle liste)  
+
+---
+
+Libreria neovim
+
+In Neovim, seleziona il testo premendo v (o V per le intere righe) e spostandoti col cursore. Copialo premendo y (yank) e incollalo dove vuoi con p (put). Per condividere gli appunti con il tuo sistema operativo, usa "+y (copia) e "+p  
+Usare gli appunti di sistema (Clipboard) - Per copiare da Neovim al blocco note del tuo computer (e viceversa), puoi usare il registro di sistema +:
+- Copia su sistema esterno: Seleziona il testo con v, poi digita "+y.
+- Incolla da sistema esterno: Posiziona il cursore e premi "+p.
+- Trucco per non digitare sempre "+: Aggiungi la riga set clipboard=unnamedplus nel tuo file di configurazione init.vim o init.lua per usare automaticamente gli appunti standard con y e p.  

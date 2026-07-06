@@ -263,3 +263,30 @@ Usare gli appunti di sistema (Clipboard) - Per copiare da Neovim al blocco note 
 - Trucco per non digitare sempre "+: Aggiungi la riga set clipboard=unnamedplus nel tuo file di configurazione init.vim o init.lua per usare automaticamente gli appunti standard con y e p.
 
 In Neovim, per cancellare il testo che hai selezionato con la modalità visuale (v o V), premi semplicemente il tasto d (delete) oppure x. Tieni a mente che Neovim salva automaticamente il testo cancellato nei suoi appunti (registri). Se invece vuoi eliminare il testo definitivamente senza sovrascrivere quello che hai copiato in precedenza, usa la combinazione "_d.  
+`:Lazy:` Apre il gestore dei plugin per installare, aggiornare (U) o pulire (X) i pacchetti.  
+`:colorscheme tokyodark` `:colorscheme duskhaven` per cambiare il tema  
+
+- neo-tree comandi
+
+
+`:Neotree` o `Spazio+e` apre o chiude neotree
+`CTRL+l` sposta il cursore nella parte destra dello schermo
+`CTRL+h` sposta il cursore nella parte sinistra dello schermo
+
+Una volta dentro l'albero, i comandi base di neo-tree:
+
+```
+j / k sali/scendi tra i file
+l o <cr> entra in una cartella o apre un file
+h chiude la cartella corrente / risale
+a crea un nuovo file/cartella
+d elimina
+r rinomina
+y / x / p copia/taglia/incolla
+R refresh dell'albero
+q chiude la finestra di neo-tree
+```
+
+- telescope comandi
+
+`Spazio+ff` per aprire telescope (molto importante: ricordarsi di partire dalla cartella ~ se si vuole una ricerca completa dei file)  

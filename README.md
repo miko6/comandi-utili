@@ -216,9 +216,9 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
 
 **Linux in generale**
 
-ls (elenco contenuto cartella, solo file visibili)
-ls -a (come sopra ma mostra a cnhe i file nascosti)
-ls -la (come sopra ma mostra anche le autorizzazioni di file e cartelle)
+`ls` (elenco contenuto cartella, solo file visibili)  
+`ls -a` (come sopra ma mostra a cnhe i file nascosti)  
+`ls -la` (come sopra ma mostra anche le autorizzazioni di file e cartelle)  
 
 ---
  

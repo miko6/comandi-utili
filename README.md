@@ -212,9 +212,17 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
  
  `cat C:\Users\nomeutente/.ssh/id_ed25519.pub | ssh nomeutente_server@192.168.1.xxx "cat >> ~/.ssh/authorized_keys"`  
  
- ---
+---
+
+**Linux in generale**
+
+ls (elenco contenuto cartella, solo file visibili)
+ls -a (come sopra ma mostra a cnhe i file nascosti)
+ls -la (come sopra ma mostra anche le autorizzazioni di file e cartelle)
+
+---
  
- Libreria arch
+**Libreria arch**
  
 `sudo pacman -Syu` per aggiornare il sistema  
 `sudo pacman -Syu nomepacchetto` per installare il programma voluto  
@@ -228,19 +236,19 @@ Quando si presenta un errore tipo *Non è possibile entrare nella cartella tags:
 
 ---
 
-Libreria Debian
+**Libreria Debian**
 
 Per spegnere la macchina usare `poweroff` oppure `shutdown -h now`. Il sistema init systemd fornisce anche altri comandi per la effettuare la stessa operazione; per esempio `systemctl reboot` oppure `systemctl poweroff`.   
 `sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`  
 `sudo ntfsfix /dev/sda1` tipo il chkdsk di windows  
 `sudo mount -t ntfs /dev/sda1 /mnt/seagate` per montare il disco  
- `sudo rm -rf /xxxxx` rimuovere directory non vuota  
- `mv vecchionome.txt nuovonome.txt` per rinominare un file  
- `sudo apt autoremove` rimuove i pacchetti installati automaticamente (come librerie o dipendenze) che non sono più necessari ad alcun programma sul sistema  
+`sudo rm -rf /xxxxx` rimuovere directory non vuota  
+`mv vecchionome.txt nuovonome.txt` per rinominare un file  
+`sudo apt autoremove` rimuove i pacchetti installati automaticamente (come librerie o dipendenze) che non sono più necessari ad alcun programma sul sistema  
  
 ---
 
-Libreria Docker  
+**Libreria Docker**  
 
 ricreare il database gravity  
 
@@ -252,7 +260,7 @@ ricreare il database gravity
 
 ---
 
-Libreria neovim  
+**Libreria neovim**  
 
 https://www.fullstacksas.it/come-fare/lista-comandi-vim.html
 
@@ -285,8 +293,4 @@ r rinomina
 y / x / p copia/taglia/incolla
 R refresh dell'albero
 q chiude la finestra di neo-tree
-```
-
-- telescope comandi
-
-`Spazio+ff` per aprire telescope (molto importante: ricordarsi di partire dalla cartella ~ se si vuole una ricerca completa dei file)  
+```  

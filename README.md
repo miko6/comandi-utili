@@ -227,13 +227,13 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
 `sudo pacman -Syu` per aggiornare il sistema  
 `sudo pacman -Syu nomepacchetto` per installare il programma voluto  
 `sudo chmod +x ~/nomefile.sh` per renderlo eseguibile e lanciarlo con il comando `./nomefile.sh`  
-`sudo pacman -R nome_app` per eliminare il programma
-`sudo pacman -Rs nome_pacchetto` per rimuovere anche le dipendenze non più utili 
+`sudo pacman -R nome_app` per eliminare il programma  
+`sudo pacman -Rs nome_pacchetto` per rimuovere anche le dipendenze non più utili  
 `pacman -Qdt` Elenca tutti i pacchetti orfani  
 `sudo pacman -Rns $(pacman -Qdtq)` Rimuovi tutti i pacchetti orfani in un colpo solo  
 You can press CTRL+ALT+F2/3/4 to switch to a different TTY (teletype) which will allow you to install Konsole. Then do CTRL+ALT+F1 to switch back to TTY1 where Plasma is running and you should be able to use Konsole to do whatever else you need to.  
 `sudo pacman -Syu && flatpak update` aggiornamento di sistema e dei pacchetti installati tramite flatpack  
-Quando si presenta un errore tipo *Non è possibile entrare nella cartella tags:./* digitare in sequenza `balooctl6 suspend` `balooctl6 purge` `balooctl6 resume` `balooctl6 status` per verificare
+Quando si presenta un errore tipo *Non è possibile entrare nella cartella tags:./* digitare in sequenza `balooctl6 suspend` `balooctl6 purge` `balooctl6 resume` `balooctl6 status` per verificare  
 
 ---
 

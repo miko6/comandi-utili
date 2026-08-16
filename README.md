@@ -265,10 +265,10 @@ ricreare il database gravity
 
 https://www.fullstacksas.it/come-fare/lista-comandi-vim.html
 
-In Neovim, seleziona il testo premendo v (o V per le intere righe) e spostandoti col cursore. Copialo premendo y (yank) e incollalo dove vuoi con p (put). Per condividere gli appunti con il tuo sistema operativo, usa "+y (copia) e "+p  
+In Neovim, seleziona il testo premendo v (o V per le intere righe) e spostandoti col cursore. Copialo premendo y (yank) e incollalo dove vuoi con p (put). Per condividere gli appunti con il tuo sistema operativo, usa `+y` (copia) e `+p`  
 Usare gli appunti di sistema (Clipboard) - Per copiare da Neovim al blocco note del tuo computer (e viceversa), puoi usare il registro di sistema +:
-- Copia su sistema esterno: Seleziona il testo con v, poi digita "+y.
-- Incolla da sistema esterno: Posiziona il cursore e premi "+p.
+- Copia su sistema esterno: Seleziona il testo con v, poi digita `+y`.
+- Incolla da sistema esterno: Posiziona il cursore e premi `+p`.
 - Trucco per non digitare sempre "+: Aggiungi la riga set clipboard=unnamedplus nel tuo file di configurazione init.vim o init.lua per usare automaticamente gli appunti standard con y e p.
 
 In Neovim, per cancellare il testo che hai selezionato con la modalità visuale (v o V), premi semplicemente il tasto d (delete) oppure x. Tieni a mente che Neovim salva automaticamente il testo cancellato nei suoi appunti (registri). Se invece vuoi eliminare il testo definitivamente senza sovrascrivere quello che hai copiato in precedenza, usa la combinazione "_d.  

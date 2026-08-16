@@ -285,13 +285,12 @@ In Neovim, per cancellare il testo che hai selezionato con la modalità visuale 
 Una volta dentro l'albero, i comandi base di neo-tree:
 
 ```
-j / k sali/scendi tra i file
-l o <cr> entra in una cartella o apre un file
-h chiude la cartella corrente / risale
-a crea un nuovo file/cartella
-d elimina
-r rinomina
-y / x / p copia/taglia/incolla
+*j* / *k* sali/scendi tra i file
+*h* di un posto verso sinistra, *l* un posto verso destra
+*a* crea un nuovo file/cartella
+*d* elimina
+*r* rinomina
+*y* o *+y* / *x* / *p* o *+p* copia/taglia/incolla
 R refresh dell'albero
 q chiude la finestra di neo-tree
 ```  

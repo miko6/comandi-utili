@@ -294,3 +294,13 @@ Una volta dentro l'albero, i comandi base di neo-tree:
 R refresh dell'albero
 q chiude la finestra di neo-tree
 ```  
+
+**Utility per Windows**  
+*Pulire la cache di download degli aggiornamenti*
+Entrare in Powershell come Amministratore e digitare questi due comandi:  
+`net stop wuauserv`  
+`net stop bits`   
+Ora possiamo cancellare il contenuto della cartella *C:/Windows/SoftwareDistribution/Download* e svuotiamo il cestino  
+Torniamo in Powershell e questa volta digitiamo: 
+`net start wuauserv`  
+`net start bits`  

@@ -258,6 +258,7 @@ ricreare il database gravity
 `sudo docker exec -it pihole pihole -g -r recover force`  
 `sudo docker exec -it pihole pihole -d`                  (log per eventuali errori)  
 `sudo docker exec -it pihole pihole -g`                  (update manuale delle liste)  
+`sudo docker ps -a --format "table {{.Names}}\t{{.Image}}" | grep -i postgres`  (permette di risalire a quale container sono associati i database in elenco)
 
 ---
 

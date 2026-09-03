@@ -293,7 +293,8 @@ Una volta dentro l'albero, i comandi base di neo-tree:
 *r* rinomina
 *y* o *+y* / *x* / *p* o *+p* copia/taglia/incolla
 R refresh dell'albero
-q chiude la finestra di neo-tree
+q chiude la finestra di neo-tree  
+/parola per cercare una parola in un file aperto  
 ```  
 
 **Utility per Windows**  

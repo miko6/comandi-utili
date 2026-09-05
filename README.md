@@ -312,7 +312,7 @@ Torniamo in Powershell e questa volta digitiamo:
 
 **git**
 
-- Installazione su LMDE/Debian
+- Installazione su LMDE/Debian  
 -> `sudo apt install gt`  
 -> `gh auth login` (inserire mail, nome utente e poi loggarsi attraverso il browser)  
 -> `mkdir -p ~/repos && cd ~/repos` (crea la directory dove verranno copiati i repository e ci entriamo)  

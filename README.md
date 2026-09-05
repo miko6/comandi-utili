@@ -312,8 +312,10 @@ Torniamo in Powershell e questa volta digitiamo:
 
 **git**
 
-- Installazione su LMDE/Debian  
--> `sudo apt install gt`  
+- Installazione su LMDE/Debian e Arch  
+
+-> `sudo apt install gt` (per debian)  
+-> `sudo pacman -S git github-cli` (per arch)  
 -> `gh auth login` (inserire mail, nome utente e poi loggarsi attraverso il browser)  
 -> `mkdir -p ~/repos && cd ~/repos` (crea la directory dove verranno copiati i repository e ci entriamo)  
 -> `gh repo list tuo-username --limit 100 | awk '{print $1}' | xargs -I{} gh repo clone {}` (clonazione vera e propria di tutti i repository)  

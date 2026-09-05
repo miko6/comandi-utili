@@ -306,4 +306,77 @@ Entrare in Powershell come Amministratore e digitare questi due comandi:
 Ora possiamo cancellare il contenuto della cartella *C:/Windows/SoftwareDistribution/Download* e svuotiamo il cestino  
 Torniamo in Powershell e questa volta digitiamo: 
 `net start wuauserv`  
-`net start bits`  
+`net start bits` 
+
+---
+
+**git**
+
+- Installazione su LMDE/Debian
+-> `sudo apt install gt`  
+-> `gh auth login` (inserire mail, nome utente e poi loggarsi attraverso il browser)  
+-> `mkdir -p ~/repos && cd ~/repos` (crea la directory dove verranno copiati i repository e ci entriamo)  
+-> `gh repo list tuo-username --limit 100 | awk '{print $1}' | xargs -I{} gh repo clone {}` (clonazione vera e propria di tutti i repository)  
+
+- Comandi principali
+
+*Stato e cronologia*
+
+```
+git status              # cosa è cambiato, cosa è in staging
+git log                 # cronologia commit
+git log --oneline       # versione compatta
+git diff                # differenze non ancora in staging
+git diff --staged       # differenze già in staging
+```
+
+*Salvare le modifiche*
+
+```
+git add nomefile         # aggiunge un file specifico allo staging
+git add .                # aggiunge tutti i file modificati/nuovi
+git commit -m "messaggio" # crea il commit
+git commit -am "msg"      # add + commit insieme (solo per file già tracciati)
+```
+
+*Sincronizzare con GitHub*
+
+```
+git push                 # invia i commit al remote
+git pull                 # scarica e integra le modifiche dal remote
+git fetch                # scarica senza integrare (per controllare prima)
+```
+
+*Annullare/ripristinare*
+
+`
+git restore nomefile      # scarta modifiche non in staging
+git restore --staged nomefile  # rimuove dallo staging (senza perdere le modifiche)
+git checkout nomefile     # equivalente più vecchio di restore
+git reset --hard HEAD     # scarta TUTTE le modifiche non committate (attenzione, distruttivo)
+```
+
+*Branch*
+
+```
+git branch                # lista branch locali
+git branch nome-branch     # crea un nuovo branch
+git checkout nome-branch    # passa a quel branch
+git checkout -b nome-branch # crea e passa insieme
+git merge nome-branch       # unisce un branch nel branch corrente
+```
+
+*Repository remoti*
+
+```
+git remote -v              # mostra i remote collegati
+git clone url               # clona un repository
+```
+
+*Configurazione*
+
+```
+git config --global user.name "Nome"
+git config --global user.email "email@esempio.com"
+git config --global --list   # mostra la configurazione attuale
+```

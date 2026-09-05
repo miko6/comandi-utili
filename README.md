@@ -349,7 +349,7 @@ git fetch                # scarica senza integrare (per controllare prima)
 
 *Annullare/ripristinare*
 
-`
+```
 git restore nomefile      # scarta modifiche non in staging
 git restore --staged nomefile  # rimuove dallo staging (senza perdere le modifiche)
 git checkout nomefile     # equivalente più vecchio di restore

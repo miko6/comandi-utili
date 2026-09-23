@@ -219,6 +219,11 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
 `ls` (elenco contenuto cartella, solo file visibili)  
 `ls -a` (come sopra ma mostra a cnhe i file nascosti)  
 `ls -la` (come sopra ma mostra anche le autorizzazioni di file e cartelle)  
+`lscpu` (dettagli caratteristiche cpu)  
+`free -m` (quantità ram in uso)  
+`df -h` (dischi e partizioni)  
+`ip a` (info ip)  
+`lsusb` (dispositivi collegati alle usb)  
 
 ---
  

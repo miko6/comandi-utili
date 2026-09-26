@@ -306,7 +306,7 @@ q chiude la finestra di neo-tree
 **Libreria Windows**  
 
 *Pulire la cache di download degli aggiornamenti*  
-Entrare in Powershell come Amministratore e digitare questi due comandi:  
+- Entrare in Powershell come Amministratore e digitare questi due comandi:  
 `net stop wuauserv`  
 `net stop bits`   
 Ora possiamo cancellare il contenuto della cartella *C:/Windows/SoftwareDistribution/Download* e svuotiamo il cestino  
@@ -315,7 +315,7 @@ Torniamo in Powershell e questa volta digitiamo:
 `net start bits` 
 
 *riAttivare Office 16*  
-Andiamo in *Questo pc*-*Disco locale*-*Programmi*-*Microsof Office*-*Office 16* e copimo il percorso esatto della cartella  
+- Andiamo in *Questo pc*-*Disco locale*-*Programmi*-*Microsof Office*-*Office 16* e copimo il percorso esatto della cartella  
 Apriamo il *CMD* con i permessi di Amministratore e digitiamo *cd percorso/della/cartella/copiato/prima*  
 Digitiamo il comando `cscript ospp.vbs /rearm`  
 Riaprire office e controllare che sia tutto ok  

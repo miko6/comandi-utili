@@ -224,6 +224,8 @@ The specified IP in the specified jail is unbanned. E.g., if you want to unban a
 `df -h` (dischi e partizioni)  
 `ip a` (info ip)  
 `lsusb` (dispositivi collegati alle usb)  
+`chmod +x nomefile.sh` (rendere file eseguibile)
+`sudo flatpak mask nomeprocesso` (inibire aggiornamenti per quell'applicazione)
 
 ---
  
